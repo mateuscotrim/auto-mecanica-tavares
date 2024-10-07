@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Tavares</title>
+</head>
+
+<body>
+    <header class="p-3 text-white data-bg-dark" style="background-color: #131336;">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <h1 class="fw-bold">Tavares</h1>
+                <div class="dropdown">
+                    <span class="m-0 d-flex align-items-center text-decoration-none dropdown-toggle" style="cursor: pointer;" data-bs-toggle="dropdown">
+                        <img src="https://www.gov.br/cdn/sso-status-bar/src/image/user.png" width="34" height="34" class="rounded-circle me-2">
+                        <strong>Fulano</strong>
+                    </span>
+                    <ul class="dropdown-menu dropdown-menu-dark shadow">
+                        <li><button class="dropdown-item btn" data-bs-toggle="modal"
+                                data-bs-target="#alterarSenha-1">Alterar senha</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a href="login.html" class="dropdown-item">Deslogar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="alterarSenha-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Alterar senha</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="" method="post">
+                    <div class="modal-body">
+                        <label class="form-label">Senha atual</label>
+                        <input type="password" id="" name="" class="form-control" required><br>
+                        <label class="form-label">Senha nova</label>
+                        <input type="password" id="" name="" class="form-control" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Alterar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="d-flex flex-wrap justify-content-center align-items-center p-4 text-center" style="height: 90vh;">
+            <a href="orcamentos.html" class="text-decoration-none">
+                <div class="card shadow m-4 p-4" style="width: 18rem;">
+                    <i class="bi bi-flag-fill" style="font-size: 4rem; color: #131336;"></i><hr>
+                    <h5 class="card-title">Orçamentos</h5>
+                </div>
+            </a>
+            <a href="clientes.html" class="text-decoration-none">
+                <div class="card shadow m-4 p-4" style="width: 18rem;">
+                    <i class="bi bi-people-fill" style="font-size: 4rem; color: #131336;"></i><hr>
+                    <h5 class="card-title">Clientes</h5>
+                </div>
+            </a>
+            <a href="veiculos.html" class="text-decoration-none">
+                <div class="card shadow m-4 p-4" style="width: 18rem;">
+                    <i class="bi bi-car-front-fill" style="font-size: 4rem; color: #131336;"></i><hr>
+                    <h5 class="card-title ">Veículos</h5>
+                </div>
+            </a>
+            <a href="servicos.html" class="text-decoration-none">
+                <div class="card shadow m-4 p-4" style="width: 18rem;">
+                    <i class="bi bi-wrench" style="font-size: 4rem; color: #131336;"></i><hr>
+                    <h5 class="card-title">Serviços</h5>
+                </div>
+            </a>
+            <a href="produtos.html" class="text-decoration-none">
+                <div class="card shadow m-4 p-4" style="width: 18rem;">
+                    <i class="bi bi-box-seam-fill" style="font-size: 4rem; color: #131336;"></i><hr>
+                    <h5 class="card-title">Produtos</h5>
+                </div>
+            </a>
+            <a href="funcionarios.html" class="text-decoration-none">
+                <div class="card shadow m-4 p-4" style="width: 18rem;">
+                    <i class="bi bi-person-vcard-fill" style="font-size: 4rem; color: #131336;"></i><hr>
+                    <h5 class="card-title">Funcionários</h5>
+                </div>
+            </a>
+            <a href="relatorio.html" class="text-decoration-none">
+                <div class="card shadow m-4 p-4" style="width: 18rem;">
+                    <i class="bi bi-graph-up" style="font-size: 4rem; color: #131336;"></i><hr>
+                    <h5 class="card-title">Relatório</h5>
+                </div>
+            </a>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+
+</html>
